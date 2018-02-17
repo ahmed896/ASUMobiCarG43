@@ -1,0 +1,13 @@
+Arduino refrence that we will learn from it :
+http://www.mediafire.com/file/qc42wbvmajln86b/Beginning+Arduino+2nd+Ed.docx
+                     ...............................
+Arduino playlist for beginners
+https://www.youtube.com/watch?v=09zfRaLEasY&list=PLZfay8jtbyJt6gkkOgeeapCS_UrsgfuJA
+                     ..../=\......***....../*\...
+Arduino playlist for advanced tutorials :
+https://www.youtube.com/watch?v=bYcbU8aQ2Js&list=PL2GAS4vHuGW2J5XKKLlsezt-A9Ii96tau
+                        ..... = ... = ... = .......
+Arduino slides :
+https://drive.google.com/open?id=1S1laXtnK5lQNLi-5_pe-qq2cJYKbEVhT
+                        
+                         
