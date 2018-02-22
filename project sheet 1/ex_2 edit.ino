@@ -13,7 +13,7 @@ for(int i=0;i<=3;i++)
   digitalWrite(i,LOW);
   if (i==3)
   {
-    for (i=2;i>=0;i--)
+    for (int i=2;i>=1;i--)
     {
       digitalWrite(i,HIGH);
       delay(1000);
