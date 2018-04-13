@@ -1,0 +1,51 @@
+int RS=1;
+int LS=2;
+int MS =4;
+int LM1=3;
+int LM2=5;
+int RM1=6;
+int RM2=9;
+
+void setup() {
+  pinMode(LM1,OUTPUT);
+  pinMode(LM2,OUTPUT);
+  pinMode(RM1,OUTPUT);
+  pinMode(RM2,OUTPUT);
+  pinMode(RS,INPUT) ;
+  pinMode(LS,INPUT) ;
+  pinMode(MS,INPUT) ;
+}
+
+void loop() {
+   if((digitalRead(LS) && digitalRead(RS) ) || digitalRead(MS))     //FOrward
+  {
+    digitalWrite(LM1, HIGH);
+    digitalWrite(LM2, LOW);
+    digitalWrite(RM1, HIGH);
+    digitalWrite(RM2, LOW);
+  }
+  
+  if(!(digitalRead(LS)) && digitalRead(RS) &&  !(digitalRead(MS)) )     //right
+  {
+    digitalWrite(LM1, LOW);
+    digitalWrite(LM2, LOW);
+    digitalWrite(RM1, HIGH);
+    digitalWrite(RM2, LOW);
+  }
+  
+  if(digitalRead(LS) && !(digitalRead(RS)) && !(digitalRead(MS)) )     //left
+  {
+    digitalWrite(LM1, HIGH);
+    digitalWrite(LM2, LOW);
+    digitalWrite(RM1, LOW);
+    digitalWrite(RM2, LOW);
+  }
+  
+  if(!(digitalRead(LS)) && !(digitalRead(RS)) && !(digitalRead(MS)) )     //stop
+  {
+    digitalWrite(LM1, LOW);
+    digitalWrite(LM2, LOW);
+    digitalWrite(RM1, LOW);
+    digitalWrite(RM2, LOW);
+  }
+}
