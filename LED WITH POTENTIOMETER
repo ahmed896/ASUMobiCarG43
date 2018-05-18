@@ -1,0 +1,17 @@
+int readValue;  
+int writeValue; 
+
+void setup() {
+  pinMode(A0, INPUT);  
+  pinMode(9, OUTPUT); 
+  Serial.begin(9600);      
+}
+
+void loop() {
+  
+ readValue = analogRead(A0); 
+ writeValue = (255/1023) * readValue; 
+ analogWrite(9, writeValue);      
+ Serial.println(writeValue);
+ 
+}
