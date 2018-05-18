@@ -1,0 +1,21 @@
+void setup() {
+pinMode(6, OUTPUT);
+pinMode(7, OUTPUT);
+pinMode(12, OUTPUT);
+pinMode(13, OUTPUT);       
+}
+
+void loop() {
+// forward  
+digitalwrite(6,HIGH);
+digitalwrite(7,LOW);
+digitalwrite(12,LOW);
+digitalwrite(13,HIGH);
+delay(2000);
+ // reverse 
+digitalwrite(6,LOW);
+digitalwrite(7,HIGH);
+digitalwrite(12,HIGH);
+digitalwrite(13,LOW);
+delay(2000);
+}
